@@ -1,13 +1,23 @@
 @charset "UTF-8";
+/* apenas para termos uma fonte mais bonita, qualquer mudança que façamos logo a baixo em alguma fonte não vai afetar o restante */
+/* Fonte geral do site */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&display=swap');
+/* Fonte geral do site */
+/* apenas para termos uma fonte mais bonita, qualquer mudança que façamos logo a baixo em alguma fonte não vai afetar o restante */
+
+/* deixar essa fonte para que as letras fiquem mais finas */
 
 html {
   font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
+/* deixar essa fonte para que as letras fiquem mais finas */
+
 /* variaveis para usarmos no css */
 :root {
     --menu-letra-color: #c9a84c;
     --corpo-letra-color: rgba(201, 168, 76, 0.75);
+    --cor-borda:  rgba(218, 171, 44, 0.75);
     --menu: #0a0a0a;
     --corpo : #111111;
     --background-color: rgb(88, 73, 73);
@@ -15,6 +25,7 @@ html {
     --font-size: 18px;
   }
 /* variaveis para usarmos no css */
+
 
   body {
     background-color: var(--corpo);
@@ -27,6 +38,8 @@ html {
     bottom: 0px;
   }
 
+/* header - cabeçalho desktop */
+
   header {
     background-color: var(--menu);
     color: var(--menu-letra-color);
@@ -36,6 +49,27 @@ html {
     margin: 0px;
     padding: 20px;
   }
+
+  header h1 {
+    font-weight: 100;
+    color: #c9a84c;
+  }
+
+  header h1::before {
+    content: "\2605";
+    font-size: 20px; 
+    margin-right: 8px;
+  }
+
+  header h1::after {
+    content: "\2605";
+    font-size: 20px; 
+    margin-left: 8px;
+    
+  }
+
+/* header - cabeçalho desktop */
+/* Navegação - cabeçalho desktop */
 
   ul {
     list-style-type: none;
@@ -50,20 +84,24 @@ html {
   ul li {
     display: inline-block;
     margin: 0 15px;
+    font-size: clamp(16px, 2vw, 25px);
   }
 
-  header h1 {
-    color: #c9a84c;
+  ul li::before {
+    content: "\2605";
+    font-size: 20px; 
+    margin-right: 8px;
   }
 
+/* Navegação - cabeçalho desktop */
   article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 20px;
     padding: 20px;
-    background-color: var(--background-color);
     border-radius: 10px;
+    text-align: justify;
   }
 
   article section {
@@ -89,6 +127,25 @@ html {
   header {
     flex-direction: column;
     align-items: center;
+  }
+
+  header ul li {
+    
+    padding: 10px 5px 5px 5px; 
+    margin: 5px;
+    border-radius: 5px;
+      border: 2px solid var(--cor-borda);;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
   }
 
 }
