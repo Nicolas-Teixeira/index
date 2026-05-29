@@ -78,11 +78,17 @@ html {
   footer{
     text-align: center;
   }
-/* telas de celulares */
+
 @media (max-width: 888px) {
   
   body {
     background-color: var(--corpo);
     color: var(--corpo-letra-color);
   }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
