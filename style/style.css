@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+  html {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
 /* telas de celulares */
 @media (max-width: 600px) {
   body {
@@ -20,9 +25,28 @@
 
 /* telas maiores */
 @media (min-width: 1025px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(88, 73, 73);
     color: white;
     font-size: 18px;
+    padding: 20px;
   }
+
+  ul {
+    list-style-type: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 20px;
+  }
+
 }
