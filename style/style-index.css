@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* apenas para termos uma fonte mais bonita, qualquer mudança que façamos logo a baixo em alguma fonte não vai afetar o restante */
+/* Fonte geral do site */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&display=swap');
+/* Fonte geral do site */
+/* apenas para termos uma fonte mais bonita, qualquer mudança que façamos logo a baixo em alguma fonte não vai afetar o restante */
+
+/* deixar essa fonte para que as letras fiquem mais finas */
+
+html {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* deixar essa fonte para que as letras fiquem mais finas */
+
+/* variaveis para usarmos no css */
+:root {
+    --menu-letra-color: #c9a84c;
+    --corpo-letra-color: rgba(201, 168, 76, 0.75);
+    --cor-borda:  rgba(247, 181, 2, 0.979);
+    --menu: #0a0a0a;
+    --corpo : #111111;
+    --background-color: rgb(88, 73, 73);
+    --text-color: white;
+    --font-size: 18px;
+  }
+/* variaveis para usarmos no css */
+
+/* Corpo da Pagina */
+  body {
+    background-color: var(--corpo);
+    color: var(--corpo-letra-color);
+    font-size: var(--font-size);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh; /* Aqui estamos fazendo com que o corpo da página ocupe toda a altura da viewport */
+  }
+
+/* Corpo da Pagina */
+
+
+/* Cabeçalho do site */
+/* header - cabeçalho desktop */
+
+  header {
+    background-color: var(--menu);
+    color: var(--menu-letra-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 5px;
+    border-bottom: 2px solid var(--cor-borda);
+  }
+
+  header h1 {
+    font-weight: 100;
+    color: #c9a84c;
+  }
+
+  header h1::before {
+    content: "\2605";
+    font-size: 20px;
+    margin-right: 8px;
+  }
+
+  header h1::after {
+    content: "\2605";
+    font-size: 20px;
+    margin-left: 8px;
+
+  }
+
+/* header - cabeçalho desktop */
+
+/* Navegação - cabeçalho desktop */
+
+  ul {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  ul a {
+    text-decoration: none;
+    color: white; /* Herda a cor do elemento pai */
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: clamp(16px, 2vw, 25px);
+  }
+
+  ul li::before {
+    content: "\2605";
+    font-size: clamp(16px, 2vw, 25px);
+    margin-right: 8px;
+  }
+
+    li a:hover {
+      color: var(--menu-letra-color);
+    }
+/* Navegação - cabeçalho desktop */
+/* Cabeçalho do site */
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(14px, 2vw, 20px)
+  }
+  
+  main p {
+    max-width: 1200px;
+    margin: 25px 0 0 0;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    max-width: 100%;
+    text-align: justify;
+    margin: 25px;
+    padding: 15px 15px 5px 15px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+  
+  section p {
+    margin: 0 15px 0 15px;
+  }
+
+  #img-sobre-nos {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 80px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  #img-missao {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 15px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  footer{
+    text-align: center;
+    margin: 0px;
+    background-color: var(--menu);
+    position: relative;
+  }
+
+@media (max-width: 1067px) {
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 40%;
+    text-align: justify;
+    margin: 25px;
+    padding: 0px 15px 5px 15px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  section p {
+    margin: 0 15px 0 15px;
+  }
+
+} 
+
+
+
+@media (max-width: 888px) {
+
+  body {
+    background-color: var(--corpo);
+    color: var(--corpo-letra-color);
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  header ul li {
+    margin: 5px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid var(--cor-borda);;
+  }
+
+  header ul a:hover {
+      background-color: var(--menu-letra-color);
+      color: white;
+    }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  main p {
+    max-width: 1200px;
+    margin: 25px 0 0 0;
+    font-size: 18px;
+  } 
+
+  section {
+    width: 40%;
+    text-align: justify;
+    margin: 25px;
+    padding: 0px 15px 5px 15px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  section p {
+    margin: 0 15px 0 15px;
+    font-size: 18px
+  }
+
+
+}

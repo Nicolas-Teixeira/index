@@ -17,7 +17,7 @@ html {
 :root {
     --menu-letra-color: #c9a84c;
     --corpo-letra-color: rgba(201, 168, 76, 0.75);
-    --cor-borda:  rgba(218, 171, 44, 0.75);
+    --cor-borda:  rgba(247, 181, 2, 0.979);
     --menu: #0a0a0a;
     --corpo : #111111;
     --background-color: rgb(88, 73, 73);
@@ -100,7 +100,7 @@ html {
 
   ul li::before {
     content: "\2605";
-    font-size: 20px;
+    font-size: clamp(16px, 2vw, 25px);
     margin-right: 8px;
   }
 
@@ -130,19 +130,38 @@ html {
   }
 
   section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 450px;
     max-width: 100%;
     text-align: justify;
     margin: 25px;
     padding: 15px 15px 5px 15px;
     border-radius: 10px;
-    border: 2px solid;
+    border: 2px solid var(--cor-borda);
+  }
+  
+  section p {
+    margin: 0 15px 0 15px;
   }
 
-  img {
+  #img-sobre-nos {
     width: 300px;
     max-width: 100%;
     height: auto;
+    margin: 80px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  #img-missao {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 15px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
   }
 
   footer{
@@ -152,6 +171,31 @@ html {
     position: relative;
   }
 
+@media (max-width: 1067px) {
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 40%;
+    text-align: justify;
+    margin: 25px;
+    padding: 0px 15px 5px 15px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  section p {
+    margin: 0 15px 0 15px;
+  }
+
+} 
+
+
+
 @media (max-width: 888px) {
 
   body {
@@ -160,8 +204,11 @@ html {
   }
 
   header {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   header ul li {
@@ -182,11 +229,30 @@ html {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin: 20px;
-    padding: 20px;
+    margin: 5px;
+    padding: 5px;
     border-radius: 10px;
   }
 
+  main p {
+    max-width: 1200px;
+    margin: 25px 0 0 0;
+    font-size: 18px;
+  } 
+
+  section {
+    width: 40%;
+    text-align: justify;
+    margin: 25px;
+    padding: 0px 15px 5px 15px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  section p {
+    margin: 0 15px 0 15px;
+    font-size: 18px
+  }
 
 
 }
