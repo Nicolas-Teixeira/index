@@ -26,18 +26,27 @@ html {
   }
 /* variaveis para usarmos no css */
 
-
+/* Corpo da Pagina */
   body {
     background-color: var(--corpo);
     color: var(--corpo-letra-color);
     font-size: var(--font-size);
     text-align: center;
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     left: 0px;
     top: 0px;
     bottom: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh; /* Aqui estamos fazendo com que o corpo da página ocupe toda a altura da viewport */
   }
 
+/* Corpo da Pagina */
+
+
+/* Cabeçalho do site */
 /* header - cabeçalho desktop */
 
   header {
@@ -57,18 +66,19 @@ html {
 
   header h1::before {
     content: "\2605";
-    font-size: 20px; 
+    font-size: 20px;
     margin-right: 8px;
   }
 
   header h1::after {
     content: "\2605";
-    font-size: 20px; 
+    font-size: 20px;
     margin-left: 8px;
-    
+
   }
 
 /* header - cabeçalho desktop */
+
 /* Navegação - cabeçalho desktop */
 
   ul {
@@ -89,11 +99,23 @@ html {
 
   ul li::before {
     content: "\2605";
-    font-size: 20px; 
+    font-size: 20px;
     margin-right: 8px;
   }
 
+    li a:hover {
+      color: var(--menu-letra-color);
+    }
 /* Navegação - cabeçalho desktop */
+/* Cabeçalho do site */
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
   article {
     display: flex;
     flex-direction: row;
@@ -102,23 +124,31 @@ html {
     padding: 20px;
     border-radius: 10px;
     text-align: justify;
+    
   }
 
   article section {
-    width: 50%;
+    width: 250px;
+    max-width: 100%;
+    text-align: justify;
+    margin: 50px;
   }
 
   img {
     width: 300px;
+    max-width: 100%;
     height: auto;
   }
 
   footer{
     text-align: center;
+    margin: 0px;
+    background-color: var(--menu);
+    position: relative;
   }
 
 @media (max-width: 888px) {
-  
+
   body {
     background-color: var(--corpo);
     color: var(--corpo-letra-color);
@@ -130,12 +160,17 @@ html {
   }
 
   header ul li {
-    
-    padding: 10px 5px 5px 5px; 
     margin: 5px;
+    padding: 10px;
+    align-items: center;
     border-radius: 5px;
-      border: 2px solid var(--cor-borda);;
+    border: 2px solid var(--cor-borda);;
   }
+
+  header ul a:hover {
+      background-color: var(--menu-letra-color);
+      color: white;
+    }
 
   article {
     display: flex;
@@ -145,7 +180,8 @@ html {
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-
   }
+
+
 
 }
