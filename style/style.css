@@ -56,7 +56,8 @@ html {
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    padding: 20px;
+    padding: 5px;
+    border-bottom: 2px solid var(--cor-borda);
   }
 
   header h1 {
@@ -113,25 +114,29 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: clamp(14px, 2vw, 20px)
   }
-
+  
+  main p {
+    max-width: 1200px;
+    margin: 25px 0 0 0;
+  }
 
   article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: justify;
-    
+    text-align: center;
   }
 
-  article section {
-    width: 250px;
+  section {
+    width: 450px;
     max-width: 100%;
     text-align: justify;
-    margin: 50px;
+    margin: 25px;
+    padding: 15px 15px 5px 15px;
+    border-radius: 10px;
+    border: 2px solid;
   }
 
   img {
