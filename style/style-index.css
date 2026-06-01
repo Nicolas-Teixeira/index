@@ -257,10 +257,10 @@ html {
   } 
 
   section {
-    width: 40%;
+    width: 400px;
     text-align: justify;
     margin: 25px;
-    padding: 0px 15px 5px 15px;
+    padding: 0px 15px 0px 15px;
     border-radius: 10px;
     border: 2px solid var(--cor-borda);
   }
