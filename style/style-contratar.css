@@ -137,10 +137,18 @@ html {
     width: 450px;
     max-width: 100%;
     text-align: justify;
-    margin: 25px;
-    padding: 15px 15px 5px 15px;
+    margin: 50px 10px 0 10px;
+    padding: 15px 15px 35px 15px;
     border-radius: 10px;
     border: 2px solid var(--cor-borda);
+  }
+
+  section:hover {
+    /*backgroud do botão assim que passamos o mouse por dentro*/
+    background: linear-gradient(45deg, rgba(255, 238, 1, 0.74), var(--cor-borda), rgba(255, 238, 1, 0.74));
+    border-radius: 10px;
+    border: 2px solid var(--menu-letra-color);
+    color: black;
   }
   
   section p {
