@@ -79,6 +79,11 @@ html {
 
   }
 
+  header img {
+    width: 200px;
+    height: auto;
+    margin-left: 100px;
+  }
 /* header - cabeçalho desktop */
 
 /* Navegação - cabeçalho desktop */
@@ -105,9 +110,9 @@ html {
     margin-right: 8px;
   }
 
-    li a:hover {
-      color: var(--menu-letra-color);
-    }
+  li a:hover {
+    color: var(--menu-letra-color);
+  }
 /* Navegação - cabeçalho desktop */
 /* Cabeçalho do site */
 
