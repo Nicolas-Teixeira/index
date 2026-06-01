@@ -147,24 +147,6 @@ html {
     margin: 0 15px 0 15px;
   }
 
-  #img-sobre-nos {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    margin: 80px;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
-  #img-missao {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    margin: 15px;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
   footer{
     text-align: center;
     margin: 0px;
