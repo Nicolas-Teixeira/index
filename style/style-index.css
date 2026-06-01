@@ -220,10 +220,11 @@ html {
 
   header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content:space-between;
     align-items: center;
     width: 100%;
+    padding: 0 0 0 0;
   }
 
   header ul li {
@@ -251,8 +252,8 @@ html {
 
   main p {
     max-width: 1200px;
-    margin: 25px 0 0 0;
-    font-size: 18px;
+    margin: 25px 25px 0 25px;
+    font-size: 20px;
   } 
 
   section {
@@ -266,7 +267,7 @@ html {
 
   section p {
     margin: 0 15px 0 15px;
-    font-size: 18px
+    font-size: 20px
   }
 
 
