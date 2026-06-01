@@ -63,6 +63,7 @@ html {
   header h1 {
     font-weight: 100;
     color: #c9a84c;
+    margin-left: 100px;
   }
 
   header h1::before {
@@ -126,7 +127,7 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: justify;
   }
 
   section {
@@ -146,6 +147,10 @@ html {
     margin: 0 15px 0 15px;
   }
 
+  img {
+    width: 300px
+  }
+
   #img-sobre-nos {
     width: 300px;
     max-width: 100%;
@@ -155,11 +160,20 @@ html {
     border: 2px solid var(--cor-borda);
   }
 
-  #img-missao {
+  #drinks {
     width: 300px;
     max-width: 100%;
     height: auto;
     margin: 15px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  #cardapios {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 60px 0 0 0;
     border-radius: 10px;
     border: 2px solid var(--cor-borda);
   }
