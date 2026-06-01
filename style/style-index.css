@@ -5,13 +5,6 @@
 /* Fonte geral do site */
 /* apenas para termos uma fonte mais bonita, qualquer mudança que façamos logo a baixo em alguma fonte não vai afetar o restante */
 
-/* deixar essa fonte para que as letras fiquem mais finas */
-
-html {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-}
-
-/* deixar essa fonte para que as letras fiquem mais finas */
 
 /* variaveis para usarmos no css */
 :root {
@@ -26,6 +19,12 @@ html {
   }
 /* variaveis para usarmos no css */
 
+/* deixar essa fonte para que as letras fiquem mais finas */
+html {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+/* deixar essa fonte para que as letras fiquem mais finas */
+
 /* Corpo da Pagina */
   body {
     background-color: var(--corpo);
@@ -39,10 +38,9 @@ html {
     top: 0px;
     bottom: 0px;
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr;    
     min-height: 100vh; /* Aqui estamos fazendo com que o corpo da página ocupe toda a altura da viewport */
   }
-
 /* Corpo da Pagina */
 
 
@@ -57,7 +55,7 @@ html {
     align-items: center;
     margin: 0px;
     padding: 5px;
-    border-bottom: 2px solid var(--cor-borda);
+    border-bottom: 0.5px solid var(--cor-borda);
   }
 
   header h1 {
@@ -82,7 +80,8 @@ html {
   header img {
     width: 200px;
     height: auto;
-    margin-left: 100px;
+    margin-left: 40px;
+    
   }
 /* header - cabeçalho desktop */
 
@@ -162,24 +161,25 @@ html {
 */
 
   #img-sobre-nos {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    margin: 80px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 50px 10px 10px 10px;
     border-radius: 10px;
-    border: 2px solid var(--cor-borda);
+    border: 0.5px solid var(--cor-borda);
   }
 
   #img-missao {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    margin: 15px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 50px 10px 10px 10px;
     border-radius: 10px;
-    border: 2px solid var(--cor-borda);
+    border: 0.5px solid var(--cor-borda);
   }
 
   footer{
+    border-top: 0.5px solid var(--cor-borda);
     text-align: center;
     margin: 0px;
     background-color: var(--menu);
@@ -207,9 +207,7 @@ html {
     margin: 0 15px 0 15px;
   }
 
-} 
-
-
+}
 
 @media (max-width: 500px) {
 
@@ -241,6 +239,12 @@ html {
       background-color: var(--menu-letra-color);
       color: white;
     }
+  
+  header img{
+
+    margin: 0 0 0 40px;
+
+  }
 
   article {
     display: flex;
