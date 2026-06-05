@@ -206,6 +206,7 @@ html {
     align-items: center;
     border-radius: 5px;
     border: 2px solid var(--cor-borda);
+    font-weight: bold;
   }
 
   header ul a:hover {
@@ -214,9 +215,7 @@ html {
     }
   
   header img{
-
-    margin: 0 0 0 40px;
-
+    align-self: center;
   }
 
   article {
@@ -224,8 +223,8 @@ html {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin: 5px;
-    padding: 5px;
+    margin: 25px 5px 25px 5px;
+    padding: 0px;
     border-radius: 10px;
   }
 
@@ -239,7 +238,7 @@ html {
   section {
     width: 400px;
     text-align: justify;
-    margin: 25px;
+    margin: 5px;
     padding: 0px 15px 0px 15px;
     border-radius: 10px;
     border: 2px solid var(--cor-borda);
@@ -251,7 +250,7 @@ html {
   }
 
   section h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   #img-sobre-nos {
@@ -265,7 +264,7 @@ html {
   }
 
   #img-missao {
-    width: 80%;
+    width: 100%;
     height: 400px;
     object-fit: cover; /*ajusta a imagem perfeitamente no enquandramento que colocamos*/
     margin: 15px 0 15px 0 ;
