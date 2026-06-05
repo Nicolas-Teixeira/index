@@ -182,7 +182,7 @@ html {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 290px) {
 
   body {
     background-color: var(--corpo);
