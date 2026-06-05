@@ -199,11 +199,17 @@ html {
     margin: 0px;
   }
 
+  header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0 10px 0;
+  }
+
   header ul li {
     width: 150px;
     margin: 5px;
     padding: 10px;
-    align-items: center;
     border-radius: 5px;
     border: 2px solid var(--cor-borda);
     font-weight: bold;
