@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img src="img/altusBar/logo-cabecalho.jpeg" alt="Logo do ALTUS BAR Experience" id="logo-cabecalho"> <!-- Logo do bar no cabeçalho -->
+        <img src="img/altusBar/logo-cabecalho.jpeg" alt="Logo do ALTUS BAR Experience" id="logo-cabecalho">
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -24,16 +24,46 @@
     <main>
         <h1>Coquetéis</h1>
         <article>
-            <section>   <!-- Carrocel de imagens para os coquetéis -->
-                <h2> Drinks </h2>
+
+            <section>
+                <h2>Drinks</h2>
                 <p>Oferecemos uma ampla gama de coquetéis alcoólicos e não alcoólicos, para tornar sua experiência a melhor possível.</p>
-                <img src="img/drinks/carrosel-drinks-1.jpeg" alt="Coquetel do ALTUS BAR Experience" id="drinks"> <!-- Imagens dos coqueteis -->
+
+                <!-- CARROSSEL DE DRINKS -->
+                <div class="carrossel">
+                    <div class="carrossel-controles">
+                        <button class="btn-carrossel" onclick="moverCarrossel('drinks', -1)">&#10094;</button>
+                        <div class="carrossel-track" id="track-drinks">
+                            <img src="img/drinks/carrosel-drinks-2.jpeg" alt="Drink 1">
+                            <img src="img/drinks/carrosel-drinks-4.jpeg" alt="Drink 2">
+                            <img src="img/drinks/carrosel-drinks-3.jpeg" alt="Drink 3">
+                            <!-- Adicione mais imagens aqui se quiser -->
+                        </div>
+                        <button class="btn-carrossel" onclick="moverCarrossel('drinks', 1)">&#10095;</button>
+                    </div>
+                    <div class="bolinhas"></div>
+                </div>
             </section>
-            <section>   <!-- Carrocel de imagens para os coquetéis -->
+
+            <section>
                 <h2>Cardápios personalizados</h2>
                 <p>Oferecemos uma variedade de cardápios personalizados para atender às necessidades e preferências de nossos clientes. Além de que você mesmo possa criar seu próprio cardápio exclusivo.</p>
-                <img src="img/cardapios/exemplo.jpeg" alt="Cardapios Personalizados" id="cardapios"> <!-- Cardapios Personalizados -->
+
+                <!-- CARROSSEL DE CARDÁPIOS -->
+                <div class="carrossel">
+                    <div class="carrossel-controles">
+                        <button class="btn-carrossel" onclick="moverCarrossel('cardapios', -1)">&#10094;</button>
+                        <div class="carrossel-track" id="track-cardapios">
+                            <img src="img/cardapios/exemplo.jpeg" alt="Cardápio 1">
+                            <img src="img/altusBar/carrosel-2.jpeg" alt="Cardápio 2">
+                            <!-- Adicione mais imagens aqui se quiser -->
+                        </div>
+                        <button class="btn-carrossel" onclick="moverCarrossel('cardapios', 1)">&#10095;</button>
+                    </div>
+                    <div class="bolinhas"></div>
+                </div>
             </section>
+
         </article>
     </main>
     <footer>    
