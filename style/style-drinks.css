@@ -197,9 +197,11 @@ html {
   }
 
   header ul li {
-    margin: 5px;
-    padding: 10px;
-    align-items: center;
+    width: 200px;
+    font-size:22px;
+    margin: 10px;
+    padding: 15px;
+    justify-content: center;
     border-radius: 5px;
     border: 2px solid var(--cor-borda);;
   }
@@ -226,7 +228,7 @@ html {
   } 
 
   section {
-    width: 40%;
+    width: 70%;
     text-align: justify;
     margin: 25px;
     padding: 0px 15px 5px 15px;
@@ -236,7 +238,7 @@ html {
 
   section p {
     margin: 0 15px 0 15px;
-    font-size: 18px
+    font-size: 22px
   }
 
 
@@ -259,10 +261,10 @@ html {
 }
 
 .carrossel-track img {
-    width: 400px;
+    width: 250px;
     height: 280px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
     display: none; /* JS controla qual aparece */
 }
 
@@ -270,7 +272,7 @@ html {
     background-color: var(--cor-borda);
     color: white;
     border: none;
-    padding: 10px 16px;
+    padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
     border-radius: 50%;
@@ -288,8 +290,8 @@ html {
 }
 
 .bolinha {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: var(--cor-borda);
     cursor: pointer;
